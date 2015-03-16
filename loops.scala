@@ -5,13 +5,12 @@ object loops {
   // Return a string containing n copies of s, end to end.
   // For example StringOfReps("Ok", 9) returns: "OkOkOkOkOkOkOkOkOk"
   def stringOfReps(s: String, n: Int): String = {
-    "place your code here"
+    "unknown"
   }
 
   // Return n! (n factorial: 1*2*3 *...* n if n >=1; 0! is 1.).  
   //For example Factorial(4) returns 1*2*3*4 = 24.
   def factorial(n: Int): Int = {
-    //Place your code here
     0
   }
 
@@ -24,8 +23,8 @@ object loops {
    //    eiiie
    //    eiiie
    //    eeeee
-   def printRectangle(columns:Int, rows:Int, inChar:Char, edgeChar:Char): String = {
-      "Place your code here"
+   def printRectangle(columns:Int, rows:Int, inChar:String, edgeChar:String): String = {
+     "unknown"
    }
 
 }

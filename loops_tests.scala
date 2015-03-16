@@ -36,18 +36,14 @@ class LoopScalaTestFlatSpecMatchers extends FlatSpec with Matchers {
     factorial(8) should be (40320)
   }
 
-  "printRectangle()" should "handle edge cases" in {
-    printRectangle(0, 0, 'a', 'b') should be ("")
-  }
-
-  it should "work for normal values" in {
-    val out = printRectangle(3, 2, 'i', 'e')
+  "printRectangle()" should "work for normal values" in {
+    val out = printRectangle(3, 2, "i", "e")
     out should be ("""eeeee
       |eiiie
       |eiiie
       |eeeee""".stripMargin)
-    val out2 = printRectangle(6, 2, 'x', 'o')
-    out should be ("""oooooooo
+    val out2 = printRectangle(6, 2, "x", "o")
+    out2 should be ("""oooooooo
       |oxxxxxxo
       |oxxxxxxo
       |oooooooo""".stripMargin)
