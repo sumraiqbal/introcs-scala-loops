@@ -1,7 +1,45 @@
 import scala.math.min
 
+
 object loops {
-  
+    def main( args: Array[String])
+    {
+     printReps( "gotcha", 9)
+     printReps("cool", 10)
+     print(Factorial(8)) 
+ 
+       
+        def stringOfReps( s: String, n: Int) {
+        
+             
+            for(i <-0 to n) 
+            {
+                print(s)
+               
+            } 
+           
+        }
+        
+        
+        def PrintReps1( s: String, n: Int) : String = { 
+            var MyString = ""
+            for (i <-0 to n)
+            { 
+                MyString = MyString + s
+            }
+            return MyString
+     
+        }
+        def Factorial(n: Int): Int = {
+            var newvalue=0
+            var factor=1        
+        
+            for (n <-1 until (n+1)) { 
+                 factor = n*factor
+            } 
+                factor  
+           
+        }
   // Return a string containing n copies of s, end to end.
   // For example StringOfReps("Ok", 9) returns: "OkOkOkOkOkOkOkOkOk"
   def stringOfReps(s: String, n: Int): String = {
